@@ -7,14 +7,22 @@
       Welcome to Pockets! 👋🏻
     </h2>
     <p class="signin__description">
-      Please sign-in to your account and start the <br />adventure
+      Please sign-in to your account and start the
+      <br />
+      adventure
     </p>
+    <VInput placeholder="test" />
   </div>
 </template>
 
 <script>
+  // Components
+  import VInput from '@/components/ui/VInput.vue';
+
   export default {
     name: 'SignInPage',
+
+    components: { VInput },
   };
 </script>
 
