@@ -18,6 +18,19 @@ module.exports = {
         },
       },
     ],
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: {
+          max: 6,
+          allowFirstLine: true,
+        },
+        multiline: {
+          max: 1,
+          allowFirstLine: false,
+        },
+      },
+    ],
   },
   overrides: [
     {
