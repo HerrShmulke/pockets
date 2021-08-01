@@ -12,7 +12,6 @@ const registerModule = (name, module) => {
 };
 
 export const registerModules = (modules) => {
-  console.log(modules);
   Object.keys(modules).forEach((moduleKey) => {
     const module = modules[moduleKey];
     registerModule(moduleKey, module);
