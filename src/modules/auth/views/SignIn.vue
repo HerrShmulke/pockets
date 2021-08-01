@@ -1,6 +1,6 @@
 <template>
   <AuthCard
-    class="signin"
+    class="sign-in"
     greeting="Welcome to Pockets! 👋🏻"
     description="Please sign-in to your account and start the adventure"
   >
@@ -20,7 +20,7 @@
 
 <script>
   // Constants
-  import { FORGOT_PASSWORD } from '../constants/router.js';
+  import { AUTH_FORGOT_PASSWORD } from '../constants/router.js';
 
   // Components
   import TextField from '@/components/ui/TextField.vue';
@@ -34,6 +34,6 @@
 
     components: { TextField, AuthCard, PasswordField, VButton, AuthForm },
 
-    forgotPasswordLink: { name: FORGOT_PASSWORD },
+    forgotPasswordLink: { name: AUTH_FORGOT_PASSWORD },
   };
 </script>
