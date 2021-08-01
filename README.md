@@ -6,7 +6,7 @@
 yarn install
 ```
 
-## Set up your variable environment
+### Set up your variable environment
 
 ```
 BACKEND_API_URL - application server address
