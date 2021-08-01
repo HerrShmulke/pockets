@@ -14,6 +14,7 @@
     border-radius: 5px;
     border: 1px solid $--border-color;
     width: 100%;
+    font-size: 16px;
 
     &::placeholder {
       color: $--text-color-30;
