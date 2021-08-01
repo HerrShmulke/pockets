@@ -1,19 +1,19 @@
-import { AUTH, AUTH_SIGNIN, FORGOT_PASSWORD } from './constants/router.js';
+import { AUTH, AUTH_SIGN_IN, AUTH_FORGOT_PASSWORD } from './constants/router.js';
 
 const moduleRoute = {
   path: '/auth',
   component: () => import('@/layouts/Auth.vue'),
   name: AUTH,
-  redirect: { name: AUTH_SIGNIN },
+  redirect: { name: AUTH_SIGN_IN },
   children: [
     {
-      path: 'signin',
-      name: AUTH_SIGNIN,
+      path: 'sign-in',
+      name: AUTH_SIGN_IN,
       component: () => import('./views/SignIn.vue'),
     },
     {
       path: 'forgot-password',
-      name: FORGOT_PASSWORD,
+      name: AUTH_FORGOT_PASSWORD,
       component: () => import('./views/ForgotPassword.vue'),
     },
   ],
